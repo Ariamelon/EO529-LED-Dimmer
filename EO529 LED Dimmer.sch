@@ -170,14 +170,14 @@ F 3 "~" H 4100 1400 50  0001 C CNN
 	1    4100 1400
 	1    0    0    -1  
 $EndComp
-Text GLabel 4200 1000 1    50   Input ~ 0
+Text GLabel 8300 3000 1    50   Input ~ 0
 Red
 $Comp
 L Device:R_Small R6
 U 1 1 620DA485
 P 4200 1100
 F 0 "R6" H 4141 1054 50  0000 R CNN
-F 1 "150" H 4141 1145 50  0000 R CNN
+F 1 "220" H 4141 1145 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4200 1100 50  0001 C CNN
 F 3 "~" H 4200 1100 50  0001 C CNN
 	1    4200 1100
@@ -440,7 +440,7 @@ F 3 "" H 1100 4800 50  0001 C CNN
 	1    1100 4800
 	1    0    0    -1  
 $EndComp
-Text GLabel 8300 1000 1    50   Input ~ 0
+Text GLabel 4200 1000 1    50   Input ~ 0
 Green
 $Comp
 L Device:R_Small R12
@@ -454,25 +454,14 @@ F 3 "~" H 8300 1100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR020
-U 1 1 6211A0A7
-P 8800 2600
-F 0 "#PWR020" H 8800 2350 50  0001 C CNN
-F 1 "GND" H 8805 2427 50  0000 C CNN
-F 2 "" H 8800 2600 50  0001 C CNN
-F 3 "" H 8800 2600 50  0001 C CNN
-	1    8800 2600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR019
 U 1 1 62119DEA
-P 8800 2000
-F 0 "#PWR019" H 8800 1850 50  0001 C CNN
-F 1 "VCC" H 8815 2173 50  0000 C CNN
-F 2 "" H 8800 2000 50  0001 C CNN
-F 3 "" H 8800 2000 50  0001 C CNN
-	1    8800 2000
+P 9000 3100
+F 0 "#PWR019" H 9000 2950 50  0001 C CNN
+F 1 "VCC" H 9015 3273 50  0000 C CNN
+F 2 "" H 9000 3100 50  0001 C CNN
+F 3 "" H 9000 3100 50  0001 C CNN
+	1    9000 3100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -743,14 +732,14 @@ F 3 "http://www.ti.com/lit/ds/symlink/ne556.pdf" H 5700 1200 50  0001 C CNN
 	2    5700 1200
 	1    0    0    -1  
 $EndComp
-Text GLabel 8300 3000 1    50   Input ~ 0
+Text GLabel 8300 1000 1    50   Input ~ 0
 Blue
 $Comp
 L Device:R_Small R24
 U 1 1 62143329
 P 8300 3100
 F 0 "R24" H 8241 3054 50  0000 R CNN
-F 1 "220" H 8241 3145 50  0000 R CNN
+F 1 "150" H 8241 3145 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 8300 3100 50  0001 C CNN
 F 3 "~" H 8300 3100 50  0001 C CNN
 	1    8300 3100
@@ -1337,58 +1326,102 @@ F 3 "~" H 1100 5050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Comparator:LM339 U3
-U 5 1 6229FD5C
-P 8900 2300
-F 0 "U3" H 8858 2346 50  0000 L CNN
-F 1 "LM339" H 8858 2255 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8850 2400 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 8950 2500 50  0001 C CNN
-	5    8900 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Comparator:LM339 U3
-U 2 1 62294DB3
+L Comparator:LM393 U4
+U 1 1 6213A714
 P 7500 1400
-F 0 "U3" H 7500 1767 50  0000 C CNN
-F 1 "LM339" H 7500 1676 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 7450 1500 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 7550 1600 50  0001 C CNN
-	2    7500 1400
+F 0 "U4" H 7500 1767 50  0000 C CNN
+F 1 "LM393" H 7500 1676 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 7500 1400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 7500 1400 50  0001 C CNN
+	1    7500 1400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM339 U3
-U 1 1 6228FA4A
+L Comparator:LM393 U4
+U 2 1 6213FB8E
+P 3400 3400
+F 0 "U4" H 3400 3767 50  0000 C CNN
+F 1 "LM393" H 3400 3676 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 3400 3400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 3400 3400 50  0001 C CNN
+	2    3400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 6211A0A7
+P 9000 3700
+F 0 "#PWR020" H 9000 3450 50  0001 C CNN
+F 1 "GND" H 9005 3527 50  0000 C CNN
+F 2 "" H 9000 3700 50  0001 C CNN
+F 3 "" H 9000 3700 50  0001 C CNN
+	1    9000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0101
+U 1 1 62150DA4
+P 9000 1100
+F 0 "#PWR0101" H 9000 950 50  0001 C CNN
+F 1 "VCC" H 9015 1273 50  0000 C CNN
+F 2 "" H 9000 1100 50  0001 C CNN
+F 3 "" H 9000 1100 50  0001 C CNN
+	1    9000 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 62150DB0
+P 9000 1700
+F 0 "#PWR0102" H 9000 1450 50  0001 C CNN
+F 1 "GND" H 9005 1527 50  0000 C CNN
+F 2 "" H 9000 1700 50  0001 C CNN
+F 3 "" H 9000 1700 50  0001 C CNN
+	1    9000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM393 U4
+U 3 1 62154E2E
+P 9100 3400
+F 0 "U4" H 9058 3446 50  0000 L CNN
+F 1 "LM393" H 9058 3355 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 9100 3400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 9100 3400 50  0001 C CNN
+	3    9100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM393 U3
+U 3 1 62159A90
+P 9100 1400
+F 0 "U3" H 9058 1446 50  0000 L CNN
+F 1 "LM393" H 9058 1355 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 9100 1400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 9100 1400 50  0001 C CNN
+	3    9100 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM393 U3
+U 2 1 62160E38
 P 3400 1400
 F 0 "U3" H 3400 1767 50  0000 C CNN
-F 1 "LM339" H 3400 1676 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 3350 1500 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 3450 1600 50  0001 C CNN
-	1    3400 1400
+F 1 "LM393" H 3400 1676 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 3400 1400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 3400 1400 50  0001 C CNN
+	2    3400 1400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM339 U3
-U 3 1 62295A64
+L Comparator:LM393 U3
+U 1 1 62160953
 P 7500 3400
 F 0 "U3" H 7500 3767 50  0000 C CNN
-F 1 "LM339" H 7500 3676 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 7450 3500 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 7550 3600 50  0001 C CNN
-	3    7500 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Comparator:LM339 U3
-U 4 1 62296761
-P 3400 3400
-F 0 "U3" H 3400 3767 50  0000 C CNN
-F 1 "LM339" H 3400 3676 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 3350 3500 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 3450 3600 50  0001 C CNN
-	4    3400 3400
+F 1 "LM393" H 7500 3676 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 7500 3400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 7500 3400 50  0001 C CNN
+	1    7500 3400
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
